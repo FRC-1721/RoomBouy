@@ -1,0 +1,6 @@
+[submodule "Hardware/RoomBouy/Libraries/RPi_Hat_Template"]
+	path = Hardware/RoomBouy/Libraries/RPi_Hat_Template
+	url = https://github.com/devbisme/RPi_Hat_Template.git
+[submodule "Hardware/RoomBouy/Libraries/kenwoodfox-kicad-libraries"]
+	path = Hardware/RoomBouy/Libraries/kenwoodfox-kicad-libraries
+	url = https://github.com/KenwoodFox/kenwoodfox-kicad-libraries.git
