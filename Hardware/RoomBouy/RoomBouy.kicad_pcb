@@ -12694,7 +12694,7 @@
 			(justify left)
 		)
 	)
-	(gr_text "RoomBouy\n{{FULL_REVISION}}"
+	(gr_text "RoomBouy\n${FULL_REVISION}"
 		(at -16 2.7 0)
 		(layer "F.SilkS")
 		(uuid "5172420f-5c6c-423e-a5e4-b93296cf8292")
