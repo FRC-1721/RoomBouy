@@ -4342,6 +4342,12 @@
 		(uuid "0ec48076-2f3f-4abc-8b73-d927b2368e8f")
 	)
 	(junction
+		(at 43.18 168.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2c9f418e-cd66-4a5e-9cb0-776eaaf519d2")
+	)
+	(junction
 		(at 245.11 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4711,13 +4717,23 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 167.64) (xy 43.18 173.99)
+			(xy 43.18 167.64) (xy 43.18 168.91)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "447202fe-86e1-492d-9dbf-6d8ce62374f9")
+	)
+	(wire
+		(pts
+			(xy 43.18 168.91) (xy 58.42 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "449298b8-1f28-4dea-a303-30babb96125e")
 	)
 	(wire
 		(pts
@@ -4911,6 +4927,16 @@
 	)
 	(wire
 		(pts
+			(xy 137.16 74.93) (xy 137.16 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7cbfee59-15ba-4bed-bc33-ca9497f65a16")
+	)
+	(wire
+		(pts
 			(xy 172.72 189.23) (xy 170.18 189.23)
 		)
 		(stroke
@@ -5061,6 +5087,16 @@
 	)
 	(wire
 		(pts
+			(xy 152.4 74.93) (xy 137.16 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa1d511e-f772-4f03-862b-0c0478addb80")
+	)
+	(wire
+		(pts
 			(xy 113.03 71.12) (xy 113.03 73.66)
 		)
 		(stroke
@@ -5188,6 +5224,16 @@
 			(type default)
 		)
 		(uuid "cd88f000-b756-4dd2-8984-4da74469284b")
+	)
+	(wire
+		(pts
+			(xy 43.18 168.91) (xy 43.18 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf125ef4-e725-4c13-b37c-98d7aaf15d8c")
 	)
 	(wire
 		(pts
@@ -5391,6 +5437,17 @@
 		)
 		(uuid "11c1240d-9f79-4c03-87ef-a7d5aa2bc7b1")
 	)
+	(label "SWITCHED_BATT"
+		(at 152.4 74.93 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "283100bc-d0fc-4e28-a9b5-9fb0b6c1d4e4")
+	)
 	(label "PI_TXD"
 		(at 210.82 92.71 0)
 		(fields_autoplaced yes)
@@ -5467,6 +5524,17 @@
 			(justify left bottom)
 		)
 		(uuid "aa5ed170-5240-4857-b626-7b41c53a2397")
+	)
+	(label "SWITCHED_BATT"
+		(at 58.42 168.91 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "aeb4a152-9ab1-4f25-8ad9-5c35714cd9fa")
 	)
 	(label "ROOMBA_RXD"
 		(at 165.1 34.29 0)
@@ -9496,6 +9564,74 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 43.18 168.91 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e6b834df-0256-4247-99af-7c460e57fdb1")
+		(property "Reference" "#FLG03"
+			(at 41.275 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 39.37 168.9099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 43.18 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 43.18 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 43.18 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4455ae39-53e8-4d04-8238-0daad1ccf3a1")
+		)
+		(instances
+			(project "RoomBouy"
+				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b"
+					(reference "#FLG03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x03_Pin")
 		(at 276.86 73.66 180)
 		(unit 1)
@@ -9563,71 +9699,6 @@
 			(project ""
 				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b"
 					(reference "J5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+BATT")
-		(at 137.16 77.47 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ee4b1652-0bfe-4f7f-966a-06dc443544f0")
-		(property "Reference" "#PWR021"
-			(at 137.16 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+BATT"
-			(at 137.16 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 137.16 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 137.16 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 137.16 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "041ce6fd-cc34-4f39-818a-5f6832a27139")
-		)
-		(instances
-			(project "RoomBouy"
-				(path "/894f620e-3404-4a40-a2a7-513bc1d5f99b"
-					(reference "#PWR021")
 					(unit 1)
 				)
 			)
