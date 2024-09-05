@@ -52,8 +52,8 @@ outputs:
       ray_tracing: true
       rotate_x: -1
       rotate_y: 2
-      zoom: 3
-      wait_render: 20
+      zoom: 5
+      wait_render: 25
       width: 800
 
   # ======
