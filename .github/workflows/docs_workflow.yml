@@ -41,7 +41,7 @@ jobs:
         #
       - run: mv Docs/_build/latex/*.pdf Docs/_build/latex/RoomBouy.pdf
 
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v4
         with:
           name: ProjectDocs
           path: Docs/_build/latex/RoomBouy.pdf
@@ -55,7 +55,7 @@ jobs:
     needs: [make_docs]
 
     steps:
-      - uses: actions/download-artifact@v2
+      - uses: actions/download-artifact@v4
         with:
           name: ProjectDocs
 
