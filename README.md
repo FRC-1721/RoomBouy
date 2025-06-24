@@ -35,3 +35,10 @@ git submodule update --init --recursive
 ## Project Layout
 
 If you want to use this project template for yourself, you can find it [here!](https://github.com/KenwoodFox/Project-Template)
+
+
+# Thanks
+
+## KiCAD Templates
+
+Thanks [devbisme](https://github.com/devbisme) for [RPI Hat Template](https://github.com/devbisme/RPi_Hat_Template)!
